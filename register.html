@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Registration - Computer Science</title>
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+
+<!-- Navigation -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Computer Science
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="login.html">Login</a>
+            </li>
+
+            <li>
+                <a href="register.html">Registration</a>
+            </li>
+
+            <li>
+                <a href="about.html">About Us</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<!-- Registration Section -->
+
+<section class="registration-section">
+
+    <div class="registration-box">
+
+        <h1>Create Account</h1>
+
+        <p class="subtitle">
+            Department of Computer Science
+        </p>
+
+        <p class="subtitle">
+            Pondicherry University
+        </p>
+
+
+        <form
+            action="register.php"
+            method="POST"
+            onsubmit="return validateRegistration()"
+        >
+
+            <!-- Name -->
+
+            <div class="form-group">
+
+                <label for="name">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+            </div>
+
+
+            <!-- Email -->
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+            </div>
+
+
+            <!-- Phone -->
+
+            <div class="form-group">
+
+                <label for="phone">
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter phone number"
+                    required
+                >
+
+            </div>
+
+
+            <!-- Course -->
+
+            <div class="form-group">
+
+                <label for="course">
+                    Course
+                </label>
+
+                <select
+                    id="course"
+                    name="course"
+                    required
+                >
+
+                    <option value="">
+                        Select Course
+                    </option>
+
+                    <option value="BCA">
+                        BCA
+                    </option>
+
+                    <option value="BCS">
+                        BCS
+                    </option>
+
+                    <option value="MCA">
+                        MCA
+                    </option>
+
+                    <option value="MSc">
+                        MSc
+                    </option>
+
+                    <option value="MTech">
+                        MTech
+                    </option>
+
+                    <option value="BTech">
+                        BTech
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Username -->
+
+            <div class="form-group">
+
+                <label for="username">
+                    Username
+                </label>
+
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Create a username"
+                    required
+                >
+
+            </div>
+
+
+            <!-- Password -->
+
+            <div class="form-group">
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Create a password"
+                    required
+                >
+
+            </div>
+
+
+            <!-- Confirm Password -->
+
+            <div class="form-group">
+
+                <label for="confirm_password">
+                    Confirm Password
+                </label>
+
+                <input
+                    type="password"
+                    id="confirm_password"
+                    name="confirm_password"
+                    placeholder="Confirm your password"
+                    required
+                >
+
+            </div>
+
+
+            <!-- Submit -->
+
+            <button
+                type="submit"
+                class="register-btn"
+            >
+                Register
+            </button>
+
+
+            <p class="login-text">
+
+                Already have an account?
+
+                <a href="login.html">
+                    Login here
+                </a>
+
+            </p>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
